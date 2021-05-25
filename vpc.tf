@@ -4,7 +4,7 @@ resource "aws_vpc" "main" {
 
   tags = {
     Name = "demo-vpc"
-    Purpose = "Jenkins Demo New Added Tag"
+    Purpose = "Test"
   }
 }
 resource "aws_s3_bucket" "b" {
