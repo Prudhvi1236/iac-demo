@@ -7,3 +7,12 @@ resource "aws_vpc" "main" {
     Purpose = "Jenkins Demo New Added Tag"
   }
 }
+resource "aws_s3_bucket" "b" {
+  bucket = "pru29"
+  acl    = "private"
+
+  tags = {
+    Name        = "Jenkins-Terraform-bucket"
+    Environment = "Test"
+  }
+}
